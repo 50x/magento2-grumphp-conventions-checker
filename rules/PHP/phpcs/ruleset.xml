@@ -6,4 +6,19 @@
         <exclude name="Magento.NamingConventions.InterfaceName"/>
     </rule>
 
+    <rule ref="PSR2">
+        <!-- Some M2 methods are still prefixed with underscore -->
+        <exclude name="PSR2.Methods.MethodDeclaration.Underscore"/>
+        <!-- Some M2 properties are still with underscore -->
+        <exclude name="PSR2.Classes.PropertyDeclaration.Underscore"/>
+        <exclude name="Magento.Annotations.RequireAnnotatedAttributes.MissingShort"/>
+        <!-- Avoid ambiguous array warnings -->
+        <exclude name="Magento.Annotations.RequireAnnotatedAttributes.AmbiguousType"/>
+        <exclude name="Magento.Annotations.RequireAnnotatedMethods.AmbiguousType"/>
+    </rule>
+
+    <rule ref="Squiz.Commenting.DocCommentAlignment"/>
+    <rule ref="Squiz.Functions.GlobalFunction"/>
+    <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
+    <rule ref="Squiz.NamingConventions.ValidVariableName"/>
 </ruleset>
